@@ -14,8 +14,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
   </head>
   
-   <body id="top">
-    <div style="margin: 0 auto; width: 60%; height: 10%">
+  <body id="top">
+    <div style="margin: 0 auto; width: 60%; height: auto;">
       <div class="wrapper row1">
         <header id="header" class="hoc clear"> 
           <div id="logo" class="fl_left">
@@ -23,76 +23,82 @@ Licence URI: https://www.os-templates.com/template-terms
           </div>
           <nav id="mainav" class="fl_left">
             <ul class="clear">
-             <li class="active"><a href="../index.html">Home</a></li>
-            <li class="active"><a href="../pages/people.html">Organizations</a></li>
-            <li class="active"><a href="../pages/Keynote-Speakers.html">Keynote Speakers</a></li>
-            <li class="active"><a href="../pages/program.html">Program</a></li>
+              <li class="active"><a href="../index.html">Home</a></li>
+              <li class="active"><a href="../pages/people.html">Organizations</a></li>
+              <li class="active"><a href="../pages/Keynote-Speakers.html">Keynote Speakers</a></li>
+              <li class="active"><a href="../pages/program.html">Program</a></li>
             </ul>
           </nav>
         </header>
       </div>
 
-      <div class="bgded overlay" style="position: relative; margin: 0 auto; height: 360px;">
-        <img style="position:absolute; left:0; top:0; width:100%; height:100%; z-index:-1; object-fit: cover;" src="../images/demo/backgrounds/bi2025-banner.png" alt="BI 2025 Banner"/>
-        
-        <div class="overlay-text" style="position: absolute; top: 50%; left: 5%; transform: translateY(-50%); text-align: left; color: white;">
+      <!-- HERO / BANNER -->
+      <div class="bgded overlay" style="position: relative; margin: 0 auto; height: 360px; overflow: hidden;">
+        <!-- Use object-fit: contain to show the entire image; switch to 'cover' if you prefer edge-to-edge crop -->
+        <img
+          src="../images/demo/backgrounds/bi2025-banner.png"
+          alt="BI 2025 Banner"
+          style="position:absolute; inset:0; width:100%; height:100%; object-fit: contain; background:#000; z-index:0;"
+        />
+
+        <div class="overlay-text" style="position: absolute; top: 50%; left: 5%; transform: translateY(-50%); text-align: left; color: white; z-index:1; text-shadow: 0 2px 8px rgba(0,0,0,.5);">
           <h2 style="margin: 0;"><strong>The Workshop on Generative AI for Neuroscience</strong></h2>
           <h3 style="color: #2D70EC; margin-top: 5px;"><strong><i>In conjunction with Brain Informatics 2025</i></strong></h3>
         </div>
-
- <div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <div class="content three_quarter first"> 
-      <h3><strong>Workshop Organizers</strong></h3>
-
-      <p><strong>Dr. Feng Liu</strong><br/>
-        Department of Systems and Enterprises<br/>
-        Stevens Institute of Technology, USA<br/>
-        Email: <a href="mailto:fliu22@stevens.edu" target="_blank">fliu22@stevens.edu</a><br/>
-      </p>
-
-      <p><strong>Dr. Elisa Kallioniemi</strong><br/>
-        Department of Biomedical Engineering<br/>
-        New Jersey Institute of Technology, USA<br/>
-        Email: <a href="mailto:elisa.kallioniemi@njit.edu" target="_blank">elisa.kallioniemi@njit.edu</a><br/>
-      </p>
-
-      <p><strong>Dr. Lu Zhang</strong><br/>
-        Department of Computer Science<br/>
-        Indiana University, USA<br/>
-        Email: <a href="mailto:luzhang@iu.edu" target="_blank">luzhang@iu.edu</a><br/>
-      </p>
-
-      <!-- Removed all Program Committee information -->
-    </div>
-
-    <div class="sidebar one_quarter">
-      <div class="sdb_holder">
-        <article style="font-size: 12px">
-          <h6><strong>News</strong></h6>
-          <ol>
-            <li><a href="#">Paper submission is closed</a></li> 
-          </ol>
-        </article>
       </div>
+      <!-- CLOSE the hero before starting main content -->
+
+      <div class="wrapper row3">
+        <main class="hoc container clear"> 
+          <div class="content three_quarter first"> 
+            <h3><strong>Workshop Organizers</strong></h3>
+
+            <p><strong>Dr. Feng Liu</strong><br/>
+              Department of Systems and Enterprises<br/>
+              Stevens Institute of Technology, USA<br/>
+              Email: <a href="mailto:fliu22@stevens.edu" target="_blank">fliu22@stevens.edu</a><br/>
+            </p>
+
+            <p><strong>Dr. Elisa Kallioniemi</strong><br/>
+              Department of Biomedical Engineering<br/>
+              New Jersey Institute of Technology, USA<br/>
+              Email: <a href="mailto:elisa.kallioniemi@njit.edu" target="_blank">elisa.kallioniemi@njit.edu</a><br/>
+            </p>
+
+            <p><strong>Dr. Lu Zhang</strong><br/>
+              Department of Computer Science<br/>
+              Indiana University, USA<br/>
+              Email: <a href="mailto:luzhang@iu.edu" target="_blank">luzhang@iu.edu</a><br/>
+            </p>
+
+            <!-- Removed all Program Committee information -->
+          </div>
+
+          <div class="sidebar one_quarter">
+            <div class="sdb_holder">
+              <article style="font-size: 12px">
+                <h6><strong>News</strong></h6>
+                <ol>
+                  <li><a href="#">Paper submission is closed</a></li> 
+                </ol>
+              </article>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </main>
+      </div>
+
+      <div class="wrapper row5">
+        <div id="copyright" class="hoc clear"> 
+          <p class="fl_left">Copyright &copy; 2023 - All Rights Reserved - <a href="#">IAIHI</a></p>
+        </div>
+      </div>
+
+      <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+      <script src="../layout/scripts/jquery.min.js"></script>
+      <script src="../layout/scripts/jquery.backtotop.js"></script>
+      <script src="../layout/scripts/jquery.mobilemenu.js"></script>
     </div>
-
-    <div class="clear"></div>
-  </main>
-</div>
-
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2023 - All Rights Reserved - <a href="#">IAIHI</a></p>
-  </div>
-</div>
-
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-</div>
-</body>
+  </body>
 </html>
-
-
